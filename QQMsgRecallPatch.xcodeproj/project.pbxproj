@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F9E93A61BD781DD005A50A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9E93A51BD781DD005A50A5 /* Foundation.framework */; settings = {ASSET_TAGS = (); }; };
+		0F9E93B11BD781DD005A50A5 /* QQMsgRecallPatch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E93B01BD781DD005A50A5 /* QQMsgRecallPatch.mm */; };
+		0F9E93BE1BD78201005A50A5 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9E93BD1BD78201005A50A5 /* libsubstrate.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F9E93A21BD781DD005A50A5 /* QQMsgRecallPatch.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = QQMsgRecallPatch.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F9E93A51BD781DD005A50A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F9E93AB1BD781DD005A50A5 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		0F9E93AD1BD781DD005A50A5 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		0F9E93AE1BD781DD005A50A5 /* QQMsgRecallPatch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QQMsgRecallPatch-Prefix.pch"; sourceTree = "<group>"; };
+		0F9E93AF1BD781DD005A50A5 /* QQMsgRecallPatch.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = QQMsgRecallPatch.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		0F9E93B01BD781DD005A50A5 /* QQMsgRecallPatch.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = QQMsgRecallPatch.mm; sourceTree = "<group>"; };
+		0F9E93B51BD781DD005A50A5 /* QQMsgRecallPatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = QQMsgRecallPatch.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/QQMsgRecallPatch.plist; sourceTree = "<group>"; };
+		0F9E93BD1BD78201005A50A5 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../opt/theos/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F9E939E1BD781DD005A50A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9E93BE1BD78201005A50A5 /* libsubstrate.dylib in Frameworks */,
+				0F9E93A61BD781DD005A50A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F9E93971BD781DD005A50A5 = {
+			isa = PBXGroup;
+			children = (
+				0F9E93A71BD781DD005A50A5 /* QQMsgRecallPatch */,
+				0F9E93A41BD781DD005A50A5 /* Frameworks */,
+				0F9E93A31BD781DD005A50A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F9E93A31BD781DD005A50A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F9E93A21BD781DD005A50A5 /* QQMsgRecallPatch.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F9E93A41BD781DD005A50A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F9E93BD1BD78201005A50A5 /* libsubstrate.dylib */,
+				0F9E93A51BD781DD005A50A5 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F9E93A71BD781DD005A50A5 /* QQMsgRecallPatch */ = {
+			isa = PBXGroup;
+			children = (
+				0F9E93AF1BD781DD005A50A5 /* QQMsgRecallPatch.xm */,
+				0F9E93B01BD781DD005A50A5 /* QQMsgRecallPatch.mm */,
+				0F9E93A81BD781DD005A50A5 /* Package */,
+				0F9E93AC1BD781DD005A50A5 /* Supporting Files */,
+			);
+			path = QQMsgRecallPatch;
+			sourceTree = "<group>";
+		};
+		0F9E93A81BD781DD005A50A5 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				0F9E93A91BD781DD005A50A5 /* DEBIAN */,
+				0F9E93B21BD781DD005A50A5 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		0F9E93A91BD781DD005A50A5 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				0F9E93AB1BD781DD005A50A5 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		0F9E93AC1BD781DD005A50A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F9E93AD1BD781DD005A50A5 /* PackageVersion.plist */,
+				0F9E93AE1BD781DD005A50A5 /* QQMsgRecallPatch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F9E93B21BD781DD005A50A5 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0F9E93B31BD781DD005A50A5 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		0F9E93B31BD781DD005A50A5 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				0F9E93B41BD781DD005A50A5 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		0F9E93B41BD781DD005A50A5 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				0F9E93B51BD781DD005A50A5 /* QQMsgRecallPatch.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F9E939F1BD781DD005A50A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F9E93A11BD781DD005A50A5 /* QQMsgRecallPatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F9E93B81BD781DD005A50A5 /* Build configuration list for PBXNativeTarget "QQMsgRecallPatch" */;
+			buildPhases = (
+				0F9E939C1BD781DD005A50A5 /* ShellScript */,
+				0F9E939D1BD781DD005A50A5 /* Sources */,
+				0F9E939E1BD781DD005A50A5 /* Frameworks */,
+				0F9E939F1BD781DD005A50A5 /* Headers */,
+				0F9E93A01BD781DD005A50A5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QQMsgRecallPatch;
+			productName = QQMsgRecallPatch;
+			productReference = 0F9E93A21BD781DD005A50A5 /* QQMsgRecallPatch.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F9E93981BD781DD005A50A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					0F9E93A11BD781DD005A50A5 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 0F9E939B1BD781DD005A50A5 /* Build configuration list for PBXProject "QQMsgRecallPatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F9E93971BD781DD005A50A5;
+			productRefGroup = 0F9E93A31BD781DD005A50A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F9E93A11BD781DD005A50A5 /* QQMsgRecallPatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F9E939C1BD781DD005A50A5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		0F9E93A01BD781DD005A50A5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F9E939D1BD781DD005A50A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9E93B11BD781DD005A50A5 /* QQMsgRecallPatch.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F9E93B61BD781DD005A50A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-Wl,-segalign,4000";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		0F9E93B71BD781DD005A50A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-Wl,-segalign,4000";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		0F9E93B91BD781DD005A50A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Wu (253D9QR4TP)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QQMsgRecallPatch/QQMsgRecallPatch-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/lib,
+				);
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		0F9E93BA1BD781DD005A50A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zheng Wu (253D9QR4TP)";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QQMsgRecallPatch/QQMsgRecallPatch-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/theos/lib,
+				);
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F9E939B1BD781DD005A50A5 /* Build configuration list for PBXProject "QQMsgRecallPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F9E93B61BD781DD005A50A5 /* Debug */,
+				0F9E93B71BD781DD005A50A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F9E93B81BD781DD005A50A5 /* Build configuration list for PBXNativeTarget "QQMsgRecallPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F9E93B91BD781DD005A50A5 /* Debug */,
+				0F9E93BA1BD781DD005A50A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F9E93981BD781DD005A50A5 /* Project object */;
+}
